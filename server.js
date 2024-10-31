@@ -8,7 +8,6 @@ import router from "./router/index.js";
 
 const server = express();
 const PORT = process.env.PORT || 8080;  
-
 const ready = () => console.log(`Ejecutando en el puerto ${PORT}`);
 
 
@@ -18,6 +17,6 @@ server.use(cors()) //Permite la entrada de solicitudes de terceros. Por defecto 
 server.use(morgan('dev')) //Ver la trazabilidad de las peticiones HTTP
 
 //Router
-server.use("/store",router)
+server.use("/storess",router)
 
-server.listen(PORT, ready);
+server.listen(PORT, ready); 
